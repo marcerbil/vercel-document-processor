@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 101 101">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.3;
+      }
+
+      .cls-2 {
+        fill: #9c9c9c;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Logo_Dark_Full" data-name="Logo Dark Full" class="cls-1">
+    <circle id="Logo_Dark" data-name="Logo Dark" class="cls-2" cx="50.5" cy="50.5" r="50"/>
+    <path id="Logo_Dark-2" data-name="Logo Dark" class="cls-3" d="M140,379v64h27l7-8,7,8h24V379l-31,43Z" transform="translate(-121.5 -361.5)"/>
+  </g>
+</svg>
