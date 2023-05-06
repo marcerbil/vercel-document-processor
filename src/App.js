@@ -26,6 +26,10 @@ function App() {
   const serverUrl = process.env.REACT_NODE_SERVER_URL;
   const apiKey = process.env.REACT_APP_NODE_API_KEY;
 
+  //TESTING
+  console.log(serverUrl);
+  console.log(apiKey);
+
   const formData = new FormData();
 
   /*
