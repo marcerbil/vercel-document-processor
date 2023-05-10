@@ -28,7 +28,6 @@ function App() {
 
   const formData = new FormData();
 
-  
   /*
   // FUNCTIONS
   */
@@ -42,6 +41,7 @@ function App() {
     try {
       const batchResponse = await fetch(`${serverUrl}/process-multiple`, {
         method: "POST",
+        mode: 'cors',
         headers: {
           "x-api-key": apiKey
         },
@@ -86,6 +86,7 @@ function App() {
     try {
       const downloadResponse = await fetch(`${serverUrl}/processed`,{
         type: "GET",
+        mode: 'cors',
         headers: {
           "x-api-key": apiKey
         },
@@ -305,12 +306,6 @@ function App() {
                 <Nav.Link href="https://emcreative.uk" eventKey="link-1">
                   <FA name="code" className="me-1" />
                   Other stuff
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item className="ms-4">
-                <Nav.Link href="#" eventKey="link-1">
-                  <FA name="github" className="me-1" />
-                  GitHub
                 </Nav.Link>
               </Nav.Item>
             </Navbar.Collapse>
