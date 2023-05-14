@@ -39,10 +39,11 @@ function App() {
     });
 
     try {
-      const batchResponse = await fetch(`${serverUrl}process-multiple`, {
+      const batchResponse = await fetch(`${serverUrl}/process-multiple`, {
         method: "POST",
         mode: 'cors',
         headers: {
+          "Access-Control-Request-Headers": "Content-Type",
           "x-api-key": apiKey
         },
         body: formData,
@@ -84,7 +85,7 @@ function App() {
   // gets json of processed files to work with
   async function downloadFile() {
     try {
-      const downloadResponse = await fetch(`${serverUrl}processed`,{
+      const downloadResponse = await fetch(`${serverUrl}/processed`,{
         type: "GET",
         mode: 'cors',
         headers: {
