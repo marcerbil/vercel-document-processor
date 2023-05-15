@@ -28,9 +28,6 @@ function App() {
 
   const formData = new FormData();
 
-  
-console.log(`${serverUrl}/process-multiple`);
-
   /*
   // FUNCTIONS
   */
@@ -46,8 +43,8 @@ console.log(`${serverUrl}/process-multiple`);
         method: "POST",
         mode: 'cors',
         headers: {
-          "Access-Control-Request-Headers": "Content-Type",
-          "x-api-key": apiKey
+            "Content-Type": "multipart/form-data",
+            "x-api-key": apiKey
         },
         body: formData,
       });
