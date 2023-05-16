@@ -43,8 +43,8 @@ function App() {
         method: "POST",
         mode: 'cors',
         headers: {
-            "Content-Type": "multipart/form-data",
-            "x-api-key": apiKey
+          "Origin": process.env.REACT_APP_URL,
+          "X-API-KEY": apiKey
         },
         body: formData,
       });
@@ -89,8 +89,8 @@ function App() {
         type: "GET",
         mode: 'cors',
         headers: {
-          "Access-Control-Request-Headers": "Content-Type",
-          "x-api-key": apiKey
+          "Origin": process.env.REACT_APP_URL,
+          "X-API-KEY": apiKey
         },
       });
   
